@@ -1,11 +1,11 @@
 ---
-name: engrammic:observe
+name: engrammic:remember
 description: Store observation to memory. Use for "remember this", "note that", ephemeral context.
 allowed-tools:
   - mcp__engrammic__remember
 ---
 
-# Observe
+# Remember
 
 Store a raw observation to memory. Memories decay over time and are the starting point for deeper knowledge formation.
 

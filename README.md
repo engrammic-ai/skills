@@ -16,10 +16,12 @@ cp -r engrammic:* ~/.agents/skills/
 
 ## Skills
 
-### Cognitive Guide
+### Session Start
 
 | Skill | Trigger | Purpose |
 |-------|---------|---------|
+| `onboarding` | session start | Load ICP guidance, check existing context |
+| `patterns` | "how do I..." | Discover workflow templates |
 | `eag-guide` | "how should I use memory" | Mental model for EAG layers |
 
 ### Workflows
@@ -38,23 +40,22 @@ cp -r engrammic:* ~/.agents/skills/
 
 | Skill | Layer | Purpose |
 |-------|-------|---------|
-| `observe` | memory | Store observation, no evidence needed |
+| `remember` | memory | Store observation, no evidence needed |
 | `learn` | knowledge | Store fact with evidence |
 | `reason` | intelligence | Record reasoning steps |
 | `reflect` | meta | Note when understanding changes |
 | `connect` | link | Create typed relationship |
-| `recall` | read | Search and retrieve |
+| `recall` | read | Search and retrieve (includes hypotheses) |
 | `trace` | read | Check provenance |
 
 ### Belief Operations
 
 | Skill | Purpose |
 |-------|---------|
-| `belief-state` | Query current hypotheses |
+| `hypothesize` | Form tentative belief, revise or commit later |
+| `believe` | Declare belief grounded in facts |
 | `update-belief` | Revise a hypothesis |
 | `crystallize` | Promote hypothesis to commitment |
-| `accept` | Accept a proposed belief |
-| `reject` | Reject a proposed belief |
 
 ## Philosophy
 
