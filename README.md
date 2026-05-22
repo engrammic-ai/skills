@@ -1,16 +1,16 @@
 # Engrammic Skills
 
-Open-source skills for AI agents using [Engrammic](https://engrammic.ai) epistemically-grounded memory.
+Workflow guidance for AI agents using Engrammic memory.
+
+Skills teach your agent when and how to use memory. They frontload guidance, then get out of the way. Use memory when it serves you, skip it when it doesn't.
 
 ## Installation
-
-Copy skills to your agent's skills directory:
 
 ```bash
 # Claude Code
 cp -r engrammic-* ~/.claude/skills/
 
-# Generic (works with Claude Code, Codex, Cursor, Windsurf, Gemini CLI)
+# Cross-platform (Claude Code, Codex, Cursor, Windsurf, Gemini CLI)
 cp -r engrammic-* ~/.agents/skills/
 ```
 
@@ -20,7 +20,7 @@ cp -r engrammic-* ~/.agents/skills/
 
 | Skill | Trigger | Purpose |
 |-------|---------|---------|
-| `onboarding` | session start | Load ICP guidance, check existing context |
+| `onboarding` | session start | Load guidance, check existing context |
 | `patterns` | "how do I..." | Discover workflow templates |
 | `eag-guide` | "how should I use memory" | Mental model for EAG layers |
 
@@ -45,21 +45,23 @@ cp -r engrammic-* ~/.agents/skills/
 | `reason` | intelligence | Record reasoning steps |
 | `reflect` | meta | Note when understanding changes |
 | `connect` | link | Create typed relationship |
-| `recall` | read | Search and retrieve (includes hypotheses) |
+| `recall` | read | Search and retrieve |
 | `trace` | read | Check provenance |
 
 ### Belief Operations
 
 | Skill | Purpose |
 |-------|---------|
-| `hypothesize` | Form tentative belief, revise or commit later |
+| `hypothesize` | Form tentative belief |
 | `believe` | Declare belief grounded in facts |
 | `update-belief` | Revise a hypothesis |
 | `crystallize` | Promote hypothesis to commitment |
 
-## Philosophy
+## Learn More
 
-These skills frontload guidance, then get out of your way. Use memory when it serves you, skip it when it doesn't. No ceremony required.
+- [Engrammic MCP](https://github.com/engrammic-ai/mcp) - hosted service
+- [Engrammic Engine](https://github.com/engrammic-ai/engine) - local/offline
+- [EAG Paradigm](https://github.com/engrammic-ai/primitives/blob/main/docs/README.md) - the cognitive architecture
 
 ## License
 
