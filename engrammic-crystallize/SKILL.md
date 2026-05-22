@@ -1,5 +1,5 @@
 ---
-name: engrammic:crystallize
+name: engrammic-crystallize
 description: Promote hypotheses to commitments. Use for "commit to", "finalize belief", "crystallize".
 allowed-tools:
   - mcp__engrammic__commit

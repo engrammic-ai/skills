@@ -1,5 +1,5 @@
 ---
-name: engrammic:reason
+name: engrammic-reason
 description: Store reasoning chain with steps. Use for "figure out", "reason through", "derive".
 allowed-tools:
   - mcp__engrammic__recall

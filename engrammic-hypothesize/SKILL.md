@@ -1,5 +1,5 @@
 ---
-name: engrammic:hypothesize
+name: engrammic-hypothesize
 description: Form a tentative belief during reasoning. Use when you have a theory but aren't ready to commit.
 allowed-tools:
   - mcp__engrammic__hypothesize

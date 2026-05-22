@@ -1,5 +1,5 @@
 ---
-name: engrammic:reflect
+name: engrammic-reflect
 description: Store meta-cognitive observation. Use for "I was wrong", "update belief", "flag contradiction".
 allowed-tools:
   - mcp__engrammic__reflect

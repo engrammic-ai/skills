@@ -1,5 +1,5 @@
 ---
-name: engrammic:learn
+name: engrammic-learn
 description: Store fact with evidence to knowledge layer. Use for "assert that", "we know that".
 allowed-tools:
   - mcp__engrammic__learn

@@ -1,5 +1,5 @@
 ---
-name: engrammic:review
+name: engrammic-review
 description: Code review with memory. Recall patterns before judging, learn new conventions you discover.
 ---
 

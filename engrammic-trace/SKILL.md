@@ -1,5 +1,5 @@
 ---
-name: engrammic:trace
+name: engrammic-trace
 description: Trace provenance chain for a belief. Use for "why do I believe", "where did this come from".
 allowed-tools:
   - mcp__engrammic__trace

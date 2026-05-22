@@ -1,5 +1,5 @@
 ---
-name: engrammic:recall
+name: engrammic-recall
 description: Search and retrieve context. Use for "what do I know about", "find", "search".
 allowed-tools:
   - mcp__engrammic__recall

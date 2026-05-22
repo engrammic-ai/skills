@@ -1,5 +1,5 @@
 ---
-name: engrammic:believe
+name: engrammic-believe
 description: Declare a belief grounded in facts. Use when you've reasoned to a conclusion you're ready to commit to.
 allowed-tools:
   - mcp__engrammic__believe

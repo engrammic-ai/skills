@@ -1,5 +1,5 @@
 ---
-name: engrammic:wander
+name: engrammic-wander
 description: Curiosity-driven codebase exploration with Engrammic memory. No agenda, no checklist - just wander, notice, and store. Use standalone or alongside focused explorer agents.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: engrammic:decide
+name: engrammic-decide
 description: Structured decision making. Remember options, reason tradeoffs, commit when decided.
 ---
 

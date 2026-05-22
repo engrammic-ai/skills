@@ -1,5 +1,5 @@
 ---
-name: engrammic:checkpoint
+name: engrammic-checkpoint
 description: Save context for later or handoff. Summarize what matters, tag for findability.
 ---
 

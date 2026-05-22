@@ -1,5 +1,5 @@
 ---
-name: engrammic:onboarding
+name: engrammic-onboarding
 description: Session start ritual. Load EAG guidance and check existing context.
 ---
 

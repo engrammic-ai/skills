@@ -1,5 +1,5 @@
 ---
-name: engrammic:investigate
+name: engrammic-investigate
 description: Research toward a conclusion. Gather evidence, reason when ready, believe when confident.
 ---
 

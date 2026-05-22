@@ -1,5 +1,5 @@
 ---
-name: engrammic:connect
+name: engrammic-connect
 description: Link two concepts with a typed relationship. Use for "X relates to Y", "connect these".
 allowed-tools:
   - mcp__engrammic__link

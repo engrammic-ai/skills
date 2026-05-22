@@ -1,5 +1,5 @@
 ---
-name: engrammic:update-belief
+name: engrammic-update-belief
 description: Mutate a working hypothesis. Use for "revise hypothesis", "update confidence".
 allowed-tools:
   - mcp__engrammic__revise

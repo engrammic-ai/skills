@@ -1,5 +1,5 @@
 ---
-name: engrammic:remember
+name: engrammic-remember
 description: Store observation to memory. Use for "remember this", "note that", ephemeral context.
 allowed-tools:
   - mcp__engrammic__remember

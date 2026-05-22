@@ -1,5 +1,5 @@
 ---
-name: engrammic:explore-codebase
+name: engrammic-explore-codebase
 description: Two-phase codebase exploration with Engrammic memory. Phase 1 spawns parallel targeted explorers (arch, patterns, quality, domain). Phase 2 spawns a wanderer to fill gaps. All findings tagged for later recall.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: engrammic:patterns
+name: engrammic-patterns
 description: Discover workflow templates and skills. Use to find guidance for common tasks.
 allowed-tools:
   - mcp__engrammic__patterns

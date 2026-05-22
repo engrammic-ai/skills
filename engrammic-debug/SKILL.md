@@ -1,5 +1,5 @@
 ---
-name: engrammic:debug
+name: engrammic-debug
 description: Debug with memory. Frontloads EAG guidance, then gets out of your way.
 ---
 
