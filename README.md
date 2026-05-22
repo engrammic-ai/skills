@@ -8,10 +8,10 @@ Copy skills to your agent's skills directory:
 
 ```bash
 # Claude Code
-cp -r engrammic:* ~/.claude/skills/
+cp -r engrammic-* ~/.claude/skills/
 
 # Generic (works with Claude Code, Codex, Cursor, Windsurf, Gemini CLI)
-cp -r engrammic:* ~/.agents/skills/
+cp -r engrammic-* ~/.agents/skills/
 ```
 
 ## Skills
