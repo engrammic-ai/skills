@@ -1,5 +1,5 @@
 ---
-name: engrammic:eag-guide
+name: engrammic-eag-guide
 description: Proactive memory behavior + layer selection for Engrammic MCP
 ---
 
@@ -21,6 +21,46 @@ Before ANY store operation, follow these steps in order:
 ```
 
 Skipping step 1 creates duplicates. Skipping step 4 creates orphan nodes.
+
+---
+
+## PHRASE TRIGGERS
+
+When you detect these patterns, act immediately.
+
+### Store patterns
+
+| Pattern | Tool | Notes |
+|---------|------|-------|
+| "remember that...", "remember this..." | `remember` | |
+| "note that...", "note this...", "FYI..." | `remember` | |
+| "keep in mind...", "heads up..." | `remember` | hint importance |
+| "I prefer...", "I like...", "don't ever..." | `remember` | user preference |
+| "from now on...", "going forward..." | `believe` | standing decision |
+| "we decided...", "the decision is...", "we're going with..." | `believe` | commitment |
+| "based on X, we'll Y", "after considering..." | `believe` | grounded conclusion |
+| "according to...", "the docs say...", "[link] shows..." | `learn` | has evidence |
+| "I found that...", "it turns out...", "the reason is..." | `learn` if source, else `remember` | |
+| "I think...", "my hypothesis is...", "maybe..." | `hypothesize` | tentative |
+| "I was wrong about...", "actually...", "scratch that..." | `reflect` | belief change |
+| "forget about...", "nevermind that..." | `forget` | |
+
+### Recall patterns
+
+| Pattern | Action |
+|---------|--------|
+| "didn't we already...", "what was that thing about..." | `recall` before answering |
+| "as I mentioned...", "like before...", "you should know..." | `recall` to verify you do |
+| "what do you know about X" | `recall` then synthesize |
+| User asks same question twice | recall may have missed — try broader query |
+
+### Situational triggers
+
+- **Before storing:** `recall` first to check for supersession (see MANDATORY PROTOCOL)
+- **User corrects you:** `reflect` on the change, possibly `forget` the wrong node
+- **User picks between options:** store as `believe` (commitment)
+- **Topic shift:** `recall` relevant background for new topic
+- **User pastes link/quote:** cue for `learn` with evidence_uri
 
 ---
 
@@ -164,6 +204,16 @@ hypothesize (tentative) then gather evidence then revise if needed then commit (
 
 Use hypothesize/commit when you're uncertain and refining. Use believe directly when the conclusion is clear from existing facts.
 
+### Supersession
+
+Before storing, `recall` to check if you're updating existing knowledge. If found, pass `supersedes:<node_id>` to chain the update:
+
+1. `recall("API authentication method")`
+2. Found node abc123: "The API uses OAuth2"
+3. `learn("The API uses OAuth2 with PKCE", evidence=[...], supersedes="abc123")`
+
+This creates a version chain. Old node stays for history, new node becomes current.
+
 ### Using Link
 
 Create explicit relationships when:
@@ -254,6 +304,12 @@ For full details, see the `engrammic:engage` skill.
 - Skipping evidence on knowledge claims: ungrounded facts pollute the graph
 - Forming beliefs without linked facts: these are hunches, not beliefs
 - Storing without recalling first: creates duplicates the Custodian has to clean up
+
+**Never store:**
+- Debugging steps, terminal output, error messages (transient)
+- Current task progress or in-flight work (use tasks, not memory)
+- Things obvious from reading the code
+- Speculative "might be useful later" observations
 
 **Recalling:**
 - Waiting to be explicitly asked: be proactive
