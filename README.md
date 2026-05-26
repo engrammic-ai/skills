@@ -14,6 +14,16 @@ cp -r engrammic-* ~/.claude/skills/
 cp -r engrammic-* ~/.agents/skills/
 ```
 
+See [Getting Started](docs/GETTING-STARTED.md) for first use.
+
+## How to Invoke
+
+**Slash command** (if harness supports): `/engrammic-debug`
+
+**Patterns tool** (always works): `patterns(action: 'get', name: 'debug')`
+
+Discover all: `patterns(action: 'list')`
+
 ## Skills
 
 ### Session Start
