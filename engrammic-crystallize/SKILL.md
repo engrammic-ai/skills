@@ -38,6 +38,6 @@ After crystallizing, you might:
 
 ## Example workflow
 
-1. `belief-state(query: "auth strategy")` - surface active hypotheses on the topic
+1. `recall(query: "auth strategy", include_hypotheses: true)` - surface active hypotheses on the topic
 2. `reason(steps: [...], evidence_used: [...])` - validate the strongest hypothesis
 3. `commit(belief_ids: ["{hypothesis_id}"], reason: "Validated against load tests; selecting JWT with Redis revocation")` - commit the decision

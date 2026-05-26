@@ -16,7 +16,7 @@ Store a verifiable claim with supporting evidence to the knowledge layer. Facts 
 - Moving from an observation (memory) to a grounded fact (knowledge)
 - Recording output from a tool call, document, or external reference
 
-**Heuristic:** If you would need to cite a source to defend this claim, it belongs here with that source as evidence. If you cannot cite a source, use `observe` instead.
+**Heuristic:** If you would need to cite a source to defend this claim, it belongs here with that source as evidence. If you cannot cite a source, use `remember` instead.
 
 ## Tool call
 
